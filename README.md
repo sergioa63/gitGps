@@ -11,6 +11,30 @@ $ cd dillinger
 $ npm install -d
 $ node app
 ```
+
+Agregar las siguientes librerias al buid.gradle de la aplicación
+```groovy
+
+defaultConfig {
+    minSdkVersion 19 // Min version soportada por el modulo
+}
+
+dependencies {
+    // librería para permisos Android 6.0
+    implementation "pub.devrel:easypermissions:0.4.2"
+    // GreenDao
+    implementation 'org.greenrobot:greendao:3.2.2'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation "com.squareup.okhttp:okhttp:2.4.0"
+    implementation "com.squareup.retrofit2:retrofit:2.1.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.1.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:3.5.0"
+    implementation "net.grandcentrix.tray:tray:0.12.0"
+    implementation 'com.google.android.gms:play-services:12.0.1'
+    implementation 'com.android.support:multidex:1.0.0'
+}
+```
+
 ### Configurar Proyecto
 
 Para utilizar el modulo es necesario que la aplicación tenga las siguientes características:
