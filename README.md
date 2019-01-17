@@ -6,12 +6,12 @@ El modulo permite agregarse a diferentes aplicaciones que requieran obtener coor
 
 El modulo se agrega a la aplicación como librería AAR de la siguiente manera:
 
+* Build.gradle de la aplicación
 ```groovy
-$ cd dillinger
-$ npm install -d
-$ node app
+dependencies {
+    implementation project(':ModuloGps')
+    }
 ```
-
 Agregar las siguientes librerias al buid.gradle de la aplicación
 ```groovy
 
